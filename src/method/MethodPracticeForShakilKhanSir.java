@@ -8,8 +8,22 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getName("myName"));
 		// System.out.println(getEvenNumber(20));
 		// System.out.println(getOddNumber(20));
-		System.out.println(getKilometer(12));
+		// System.out.println(getKilometer(12));
+		// System.out.println(getTextUpperCase("my name is zajbee"));
 
+	}
+
+	/**
+	 * Question number: 5: Write a method that take one string input and return
+	 * same string in upper case. parameter: String text returnType: String
+	 * servingBucket: variable
+	 */
+	public static String getTextUpperCase(String text) {
+		String upperCase = null;
+
+		upperCase = text.toUpperCase();
+
+		return upperCase;
 	}
 
 	/**
