@@ -11,7 +11,26 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getKilometer(12));
 		// System.out.println(getTextUpperCase("my name is zajbee"));
 		// System.out.println(getLowerCase("My Name Is Zajbee"));
+		// System.out.println(getAllIndex("My name is Zajbee"));
 
+	}
+
+	/**
+	 * Question number: 7: Write a method that take one String input and return
+	 * a list of all index parameter: String text returnType: ArrayList<Integer>
+	 * servingBucket: list
+	 */
+	public static ArrayList<Integer> getAllIndex(String text) {
+		ArrayList<Integer> indexList = new ArrayList<Integer>();
+
+		int lastIndex = text.length() - 1;
+
+		for (int i = 0; i <= lastIndex; i = i + 1) {
+			indexList.add(i);
+
+		}
+
+		return indexList;
 	}
 
 	/**
