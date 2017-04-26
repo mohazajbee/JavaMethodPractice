@@ -10,7 +10,21 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getOddNumber(20));
 		// System.out.println(getKilometer(12));
 		// System.out.println(getTextUpperCase("my name is zajbee"));
+		// System.out.println(getLowerCase("My Name Is Zajbee"));
 
+	}
+
+	/**
+	 * Question number: 6: Write a method that take one string input and return
+	 * same string in lower case parameter: String text returnType: String
+	 * servingBucket: variable:
+	 */
+	public static String getLowerCase(String text) {
+		String lowerCase = null;
+
+		lowerCase = text.toLowerCase();
+
+		return lowerCase;
 	}
 
 	/**
