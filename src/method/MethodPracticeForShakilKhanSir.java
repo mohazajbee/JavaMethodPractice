@@ -14,7 +14,22 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getAllIndex("My name is Zajbee"));
 		// System.out.println(getCharacterList("My name is Zajbee"));
 		// System.out.println(getSumNumber(16));
+		// System.out.println(getSquareNumber(8));
 
+	}
+
+	/**
+	 * Question number:10: Write a method that take one number input and return
+	 * square of the given number parameter: int number returnType: int
+	 * servingBucket: variable
+	 */
+	public static int getSquareNumber(int number) {
+
+		int squareNumber = 0;
+
+		squareNumber = number * number;
+
+		return squareNumber;
 	}
 
 	/**
