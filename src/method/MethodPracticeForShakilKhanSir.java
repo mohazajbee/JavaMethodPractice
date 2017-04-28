@@ -12,8 +12,25 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getTextUpperCase("my name is zajbee"));
 		// System.out.println(getLowerCase("My Name Is Zajbee"));
 		// System.out.println(getAllIndex("My name is Zajbee"));
-		System.out.println(getCharacterList("My name is Zajbee"));
+		// System.out.println(getCharacterList("My name is Zajbee"));
+		// System.out.println(getSumNumber(16));
 
+	}
+
+	/**
+	 * Question number 9: Write a method that take a number input and return the
+	 * sum of 1 to that given number parameter: int number returnType: int
+	 * serving Bucket: Variable
+	 */
+	public static int getSumNumber(int number) {
+		int sumNumber = 0;
+
+		for (int i = 0; i <= number; i = i + 1) {
+
+			sumNumber = sumNumber + i;
+		}
+
+		return sumNumber;
 	}
 
 	/**
