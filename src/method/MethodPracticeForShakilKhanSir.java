@@ -21,7 +21,7 @@ public class MethodPracticeForShakilKhanSir {
 	/**
 	 * Question number:10: Write a method that take one number input and return
 	 * square of the given number parameter: int number returnType: int
-	 * servingBucket: variable
+	 * servingBucket: list
 	 */
 	public static int getSquareNumber(int number) {
 
