@@ -12,7 +12,27 @@ public class MethodPracticeForShakilKhanSir {
 		// System.out.println(getTextUpperCase("my name is zajbee"));
 		// System.out.println(getLowerCase("My Name Is Zajbee"));
 		// System.out.println(getAllIndex("My name is Zajbee"));
+		System.out.println(getCharacterList("My name is Zajbee"));
 
+	}
+
+	/**
+	 * Question number:8: Write a method that take one string input and return
+	 * the list of all Characters parameter: String text returnType:
+	 * ArrayList<Character> servingBucket: list
+	 */
+	public static ArrayList<Character> getCharacterList(String text) {
+		ArrayList<Character> characterList = new ArrayList<Character>();
+
+		int lastIndex = text.length() - 1;
+
+		for (int i = 0; i <= lastIndex; i = i + 1) {
+
+			characterList.add(text.charAt(i));
+
+		}
+
+		return characterList;
 	}
 
 	/**
