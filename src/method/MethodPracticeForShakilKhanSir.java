@@ -1,21 +1,39 @@
 package method;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MethodPracticeForShakilKhanSir {
 
 	public static void main(String[] args) {
-		// System.out.println(getName("myName"));
-		// System.out.println(getEvenNumber(20));
-		// System.out.println(getOddNumber(20));
-		// System.out.println(getKilometer(12));
-		// System.out.println(getTextUpperCase("my name is zajbee"));
-		// System.out.println(getLowerCase("My Name Is Zajbee"));
-		// System.out.println(getAllIndex("My name is Zajbee"));
-		// System.out.println(getCharacterList("My name is Zajbee"));
-		// System.out.println(getSumNumber(16));
-		// System.out.println(getSquareNumber(8));
+		System.out.println("Exercise no 1: " + getName("myName"));
+		System.out.println("Exercise no 2: " + getEvenNumber(20));
+		System.out.println("Exercise no 3: " + getOddNumber(20));
+		System.out.println("Exercise no 4: " + getKilometer(12));
+		System.out.println("Exercise no 5: " + getTextUpperCase("my name is zajbee"));
+		System.out.println("Exercise no 6: " + getLowerCase("My Name Is Zajbee"));
+		System.out.println("Exercise no 7: " + getAllIndex("My name is Zajbee"));
+		System.out.println("Exercise no 8: " + getCharacterList("My name is Zajbee"));
+		System.out.println("Exercise no 9: " + getSumNumber(16));
+		System.out.println("Exercise no 10: " + getSquareNumber(8));
+		System.out.println("Exercise no 11: " +Arrays.toString(getNumberArray(10)));
 
+	}
+
+	/**
+	 * Question number 11: Write a method that take one number input and return 
+	 * an Array that contains 0 to given number parameter: int number
+	 * returnType: int[] servingBucket: Array
+	 */
+	public static int[] getNumberArray(int number) {
+		int[] numberArray = new int[number ];
+		for (int i=1; i<=number; i=i+1) {
+
+			numberArray[i-1] = i;
+
+		}
+
+		return numberArray;
 	}
 
 	/**
