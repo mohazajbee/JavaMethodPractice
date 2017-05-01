@@ -16,20 +16,37 @@ public class MethodPracticeForShakilKhanSir {
 		System.out.println("Exercise no 8: " + getCharacterList("My name is Zajbee"));
 		System.out.println("Exercise no 9: " + getSumNumber(16));
 		System.out.println("Exercise no 10: " + getSquareNumber(8));
-		System.out.println("Exercise no 11: " +Arrays.toString(getNumberArray(10)));
+		System.out.println("Exercise no 11: " + Arrays.toString(getNumberArray(10)));
+		System.out.println("Exercise no 12: " + getNumberList(10));
 
 	}
 
 	/**
-	 * Question number 11: Write a method that take one number input and return 
+	 * Question number 12: Write a method that take one number input and return
+	 * a number list starting from 0 to that given number parameter: int number
+	 * returnType: ArrayList<Integer> servingBucket: list
+	 */
+	public static ArrayList<Integer> getNumberList(int number) {
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+		for (int i = 1; i <= number; i = i + 1) {
+
+			numberList.add(i);
+		}
+
+		return numberList;
+
+	}
+
+	/**
+	 * Question number 11: Write a method that take one number input and return
 	 * an Array that contains 0 to given number parameter: int number
 	 * returnType: int[] servingBucket: Array
 	 */
 	public static int[] getNumberArray(int number) {
-		int[] numberArray = new int[number ];
-		for (int i=1; i<=number; i=i+1) {
+		int[] numberArray = new int[number];
+		for (int i = 1; i <= number; i = i + 1) {
 
-			numberArray[i-1] = i;
+			numberArray[i - 1] = i;
 
 		}
 
