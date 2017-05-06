@@ -18,7 +18,38 @@ public class MethodPracticeForShakilKhanSir {
 		System.out.println("Exercise no 10: " + getSquareNumber(8));
 		System.out.println("Exercise no 11: " + Arrays.toString(getNumberArray(10)));
 		System.out.println("Exercise no 12: " + getNumberList(10));
+		System.out.println("Exercise no 13: " + getResult(13));
 
+	}
+
+	/**
+	 * Question number 13: Write a method that take one number input and return
+	 * fizz if the given number divided by 5 and return buzz if the given number
+	 * divided by 5&&3 other wise return buzz fizz 
+	 * 
+	 * parameter: int number
+	 * 
+	 * returnType: String
+	 * 
+	 * servingBucket: variable
+	 */
+	public static String getResult(int number) {
+		
+		String result = null;
+		
+		if ( number % 5 == 0 && number % 3 == 0 ){
+			
+			result = "buzz";
+		} else if 
+			(number % 5 == 0){
+				
+				result = "fizz";
+			} else {
+				result = "buzz fizz";
+			}
+		
+
+		return result;
 	}
 
 	/**
