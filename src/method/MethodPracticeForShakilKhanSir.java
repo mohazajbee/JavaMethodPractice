@@ -20,24 +20,62 @@ public class MethodPracticeForShakilKhanSir {
 		System.out.println("Exercise no 12: " + getNumberList(10));
 		System.out.println("Exercise no 13: " + getResult(13));
 		int[] numbArray = new int[5];
-		int[] numArray = {12, 15, 2, 25};
+		int[] numArray = { 12, 15, 2, 25 };
+		//int[] numberArray = new int [5];
+		//int[] numbrArray = {12, 2, 11, 45, 5};
 		
-		System.out.println("Exercise no 14: " +getMaxNumber(numArray));
+				
+
+		System.out.println("Exercise no 14: " + getMaxNumber(numArray));
+		//System.out.println(getMinNumberArray(numbrArray));
+		System.out.println("Exercise no 16: " + getStringFromNumber(32));
 
 	}
 	/**
-	 * Question number: 14: Write a method that take one number array input and return the max number
-	 * parameter: int[] numArray
-	 * returnType: int
-	 * servingBucket:variable
+	 * Question number : 16: Write a method that take a number input and return the same value as a string
+	 * parameter: int number
+	 * returnType: String
+	 * servingBucket: variable
 	 */
-	public static int getMaxNumber(int[] numArray){
-		int maxNumber = 0;
-		Arrays.sort(numArray);
-		int lastIndex = numArray.length-1;
-		maxNumber = numArray[lastIndex];
+	public static String getStringFromNumber(int number){
+		String stringFromNumber = null;
 		
-		return maxNumber;
+		stringFromNumber = String.valueOf(number);
+		
+		 
+		
+		
+		return stringFromNumber;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**
+	 * Question number : 15: Write a method that take one number array input and return the min number
+	 * parameter: int[] numberArray
+	 * returnType: int
+	 * servingBucket: variable
+	 */
+	public static int getMinNumberArray(int[] numberArray){
+		int minNumber = 0;
+		Arrays.sort(numberArray);
+		int firstIndex = numberArray.length-1;
+		
+		minNumber = numberArray[firstIndex];
+		
+		
+		return minNumber;
 	}
 	
 	
@@ -54,19 +92,25 @@ public class MethodPracticeForShakilKhanSir {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	/**
+	 * Question number: 14: Write a method that take one number array input and
+	 * return the max number parameter: int[] numArray returnType: int
+	 * servingBucket:variable
+	 */
+	public static int getMaxNumber(int[] numArray) {
+		int maxNumber = 0;
+		Arrays.sort(numArray);
+		int lastIndex = numArray.length - 1;
+		maxNumber = numArray[lastIndex];
+
+		return maxNumber;
+	}
 
 	/**
 	 * Question number 13: Write a method that take one number input and return
 	 * fizz if the given number divided by 5 and return buzz if the given number
-	 * divided by 5&&3 other wise return buzz fizz 
+	 * divided by 5&&3 other wise return buzz fizz
 	 * 
 	 * parameter: int number
 	 * 
@@ -75,20 +119,18 @@ public class MethodPracticeForShakilKhanSir {
 	 * servingBucket: variable
 	 */
 	public static String getResult(int number) {
-		
+
 		String result = null;
-		
-		if ( number % 5 == 0 && number % 3 == 0 ){
-			
+
+		if (number % 5 == 0 && number % 3 == 0) {
+
 			result = "buzz";
-		} else if 
-			(number % 5 == 0){
-				
-				result = "fizz";
-			} else {
-				result = "buzz fizz";
-			}
-		
+		} else if (number % 5 == 0) {
+
+			result = "fizz";
+		} else {
+			result = "buzz fizz";
+		}
 
 		return result;
 	}
