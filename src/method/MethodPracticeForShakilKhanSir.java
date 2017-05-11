@@ -19,8 +19,49 @@ public class MethodPracticeForShakilKhanSir {
 		System.out.println("Exercise no 11: " + Arrays.toString(getNumberArray(10)));
 		System.out.println("Exercise no 12: " + getNumberList(10));
 		System.out.println("Exercise no 13: " + getResult(13));
+		int[] numbArray = new int[5];
+		int[] numArray = {12, 15, 2, 25};
+		
+		System.out.println("Exercise no 14: " +getMaxNumber(numArray));
 
 	}
+	/**
+	 * Question number: 14: Write a method that take one number array input and return the max number
+	 * parameter: int[] numArray
+	 * returnType: int
+	 * servingBucket:variable
+	 */
+	public static int getMaxNumber(int[] numArray){
+		int maxNumber = 0;
+		Arrays.sort(numArray);
+		int lastIndex = numArray.length-1;
+		maxNumber = numArray[lastIndex];
+		
+		return maxNumber;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	/**
 	 * Question number 13: Write a method that take one number input and return
